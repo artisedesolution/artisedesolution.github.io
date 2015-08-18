@@ -1,274 +1,477 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Creative - Start Bootstrap Theme</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body id="page-top">
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">[task]</a>
+<html>
+    <head>
+        <title>Task</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='shortcut icon' type='image/x-icon' href='elements/favicon.ico")' />
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link href="css/animate.css" rel="stylesheet" />
+        <link href="css/task.css" rel="stylesheet" />
+        <link href="elements/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link type="text/css" href="elements/selectmenu/themes/base/jquery.ui.core.css" rel="stylesheet" />
+        <link type="text/css" href="elements/selectmenu/themes/base/jquery.ui.theme.css" rel="stylesheet" />
+        <link type="text/css" href="elements/selectmenu/themes/base/jquery.ui.selectmenu.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="taskloader">
+            <img src="elements/img_logo.png" id="loadlogo" height="100" style="position: fixed; top: 200px; right: 0; left: 0; margin: auto;" />
+            <img src="elements/taskloader.gif" id="loadloader" style="height: 100px; width: 100px; position: fixed; top: 310px; right: 0; left: 0; margin: auto;" />
+        </div>
+        <div id="task-body">
+            <div id="navbar-mobile">
+                <div id="mlogo">
+                </div>
+                <div id="toggle-nav" class="pull-left" style="cursor: pointer">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="clearfix"></div>
+                <div id="navbar-list">
+                    <ul>
+                        <a id="navmobile1" href="javascript:void(0);">
+                            <li>Partners</li>
+                        </a>
+                        <a id="navmobile2" href="javascript:void(0);">
+                            <li>The</li>
+                        </a>
+                        <a id="navmobile3" href="javascript:void(0);">
+                            <li>inside the app</li>
+                        </a>
+                        <a id="navmobile5" href="javascript:void(0);">
+                            <li>message</li>
+                        </a>
+                    </ul>
+                </div>
+                <div id="navbar-list-social">
+                    <ul>
+                        <a target="_blank" href="http://plus.google.com/100763520583902716951/about">
+                            <li>Google+</li>
+                        </a>
+                        <a target="_blank" href="http://www.facebook.com/taskph">
+                            <li>Facebook</li>
+                        </a>
+                        <a target="_blank" href="http://instagram.com/taskph">
+                            <li>Instagram</li>
+                        </a>
+                        <a target="_blank" href="http://twitter.com/taskph">
+                            <li>Twitter</li>
+                        </a>
+                    </ul>
+                </div>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Preview</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+            <div id="navigation">
+                <div id="logonav"></div>
+                <ul>
+                    <li id="nav1">About</li>
+                    <li id="nav2">Partners</li>
+                    <li id="nav3">App Preview</li>
+                    <li id="nav5">Contact</li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>WELCOME TO [TASK]</h1>
-                <hr>
-                <p>Be constantly and instantly rewarded by connecting to your favorite local food establishments in fun and unique ways!</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
-            </div>
-        </div>
-    </header>
-
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">It's never been this easy!</h2>
-                    <hr class="light">
-                    <p class="text-faded">Task is a fun and easy way to avail of rewards such as freebies and discounts from food establishments you love, and from others that you have yet to discover. To be able to claim them, all you have to do is accomplish a series of tasks, each with its own reward.</p>
-                    <a href="https://play.google.com/store/apps/details?id=artisedesolution.task" class="btn btn-default btn-xl">Get Started!</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">WHAT TASK CAN YOU ACCOMPLISH?</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-offset-3 col-md-2 text-center">
-                    <div class="service-box">
-                        <img src="img/icons/medal.png" height="100" width="100">
-                        <h3>Sign-up reward</h3>
-                        <p class="text-muted">Welcome to the world of Task. You instantly get a reward for signing up! </p>
+            <div class="animation-frame mobile" data-1000="opacity: 0; top: 100%;" data-2100="top: 20px; opacity: 1;" data-9500="opacity: 1;" data-10000="opacity: 0; ">
+                <div id="theapp"></div>
+                <div class="blocker"></div>
+                <div id="parallax1" class="parallax-box" data-2500="opacity: 0;" data-3000="opacity: 1;" data-4000="opacity: 1; top: 0%;" data-4500="opacity: 0;">
+                    
+                    <div class="bubble" style="top: 160px; left: 0; right: 0;">
+                        <h4>Choose</h4>
+                        <p>
+                            Choose an establishment.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-2 text-center">
-                    <div class="service-box">
-                        <img src="img/icons/camera.png" height="100" width="100">
-                        <h3>Pictures</h3>
-                        <p class="text-muted">Take your selfie game to the next level! It's a greater incentive to snap that shot!</p>
+                <div id="parallax2" class="parallax-box" data-4500="opacity: 0;" data-5000="opacity: 1; top: 0%;" data-6000="top:0%" data-6500="opacity: 0;">
+                    
+                    <div class="bubble" style="top: 260px; left: 0; right: 0;">
+                        <h4>Join!</h4>
+                        <p>
+                            Join it!
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-2 text-center">
-                    <div class="service-box">
-                        <img src="img/icons/star-01.png" height="100" width="100">
-                        <h3>Ratings</h3>
-                        <p class="text-muted">Like it? Love it? Hate it? Let them know! Rate our partner merchants!</p>
+                <div id="parallax3" class="parallax-box" data-6500="opacity: 0;" data-7000="opacity: 1; top: 0%;" data-8000="top:0%" data-8500="opacity: 0;">
+                    
+                    <div class="bubble" style="top: 80px; left: 0; right: 0;">
+                        <h4>Rewards?</h4>
+                        <p>
+                            Complete all these 5 tasks to claim everything!
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-offset-4 col-md-2 text-center">
-                    <div class="service-box">
-                        <img src="img/icons/survey-01.png" height="100" width="100">
-                        <h3>Surveys</h3>
-                        <p class="text-muted">Help the restaurants you love improve even more!</p>
+                <div id="parallax4" class="parallax-box" data-8500="opacity: 0;" data-9000="opacity: 1; top: 0%;" data-10000="top:0%" data-10500="opacity: 0;">
+                    
+                    <div class="bubble" style="top: 260px; left: 0; right: 0;">
+                        <h4>Task</h4>
+                        <p>
+                            Now it's your turn to help us!
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-2 text-center">
-                    <div class="service-box">
-                        <img src="img/icons/surprise-01.png" height="100" width="100">
-                        <h3>Surprise</h3>
-                        <p class="text-muted">The best things in life come as surprises. Find out what your favorite establishment has to offer!</p>
+                <div id="screen0" class="parallax-screen" data-1000="opacity: 0;" data-1400="opacity: 1;" data-2500="top: 104px; opacity: 1;" data-3000="top: 104px;" data-10000="opacity: 0;"></div>
+                <div id="screen1" class="parallax-screen" data-2000="opacity: 0; top: 1000px;" data-2500="top: 104px; opacity: 1;" data-3500="top: 104px;" data-10000="opacity: 0;"></div>
+                <div id="screen2" class="parallax-screen" data-4000="opacity: 0; top: 1000px;" data-4500="top: 104px; opacity: 1;" data-7500="top: 104px;" data-10000="opacity: 0;"></div>
+                <div id="screen3" class="parallax-screen" data-8000="opacity: 0; top: 1000px;" data-8500="top: 104px; opacity: 1;" data-9500="top: 104px;" data-10000="opacity: 0;"></div>
+            </div>
+            <div class="animation-frame non-mobile animation-frame-desktop" data-1500="opacity: 0; top: 100%; left: 0%;" data-1900="top: 4%; opacity: 1;" data-9500="opacity: 1;" data-10000="opacity: 0; left: 100%;">
+                <div id="theapp"></div>
+                <div class="blocker"></div>
+                <div id="parallax1" class="parallax-box" data-2500="opacity: 0;" data-3000="opacity: 1;" data-4000="opacity: 1; top: 0%;" data-4500="opacity: 0; top: -100%;">
+                    <img style="top: 364px; left: 200px;" src="elements/parallax1/line.png" />
+                    <img style="top: 438px; left: 193px;" src="elements/dot.png" />
+                    <h4 style="top: 344px; left: 295px;">Choose</h4>
+                    <p style="top: 380px; left: 295px;">
+                        Choose an establishment.
+                    </p>
+                </div>
+                <div id="parallax2" class="parallax-box" data-4500="opacity: 0;" data-5000="opacity: 1; top: 0%;" data-6000="top:0%" data-6500="opacity: 0; top: -100%;">
+                    <img style="top: 185px; left: -50px;" src="elements/parallax2/line.png" />
+                    <img style="top: 181px; left: 45px;" src="elements/dot.png" />
+                    <h4 style="top: 245px; left: -210px;">Join</h4>
+                    <p style="text-align: right; top: 285px; left: -220px;">
+                        Join it!
+                    </p>
+                </div>
+                <div id="parallax3" class="parallax-box" data-6500="opacity: 0;" data-7000="opacity: 1; top: 0%;" data-8000="top:0%" data-8500="opacity: 0; top: -100%;">
+                    <h4 style="top: 344px; left: 280px; width: 300px;">Rewards?</h4>
+                    <p style="width: 200px; top: 380px; left: 280px;">
+                        Complete all these 5 tasks to claim everything!
+                    </p>
+                </div>
+                <div id="parallax4" class="parallax-box" data-8500="opacity: 0;" data-9000="opacity: 1; top: 0%;" data-10000="top:0%" data-10500="opacity: 0;">
+                    <img style="top: 185px; left: -50px;" src="elements/parallax2/line.png" />
+                    <img style="top: 181px; left: 45px;" src="elements/dot.png" />
+                    <h4 style="top: 248px; left: -193px;">Task.</h4>
+                    <p style="text-align: right; top: 285px; left: -255px; width: 190px;">
+                        Now it's your turn to help us!
+                    </p>
+                </div>
+                <div id="screen0" class="parallax-screen" data-1500="opacity: 0;" data-1900="opacity: 1;" data-2500="top: 125px; opacity: 1;" data-3000="top: 125px;" data-10000="opacity: 0;"></div>
+                <div id="screen1" class="parallax-screen" data-2000="opacity: 0; top: 1000px;" data-2500="top: 125px; opacity: 1;" data-3500="top: 125px;" data-10000="opacity: 0;"></div>
+                <div id="screen2" class="parallax-screen" data-4000="opacity: 0; top: 1000px;" data-4500="top: 125px; opacity: 1;" data-7500="top: 125px;" data-10000="opacity: 0;"></div>
+                <div id="screen3" class="parallax-screen" data-8000="opacity: 0; top: 1000px;" data-8500="top: 125px; opacity: 1;" data-9500="top: 125px;" data-10000="opacity: 0;"></div>
+            </div>
+            <div id="backshadow" class="backshadow" style="display: none;">
+            </div>
+
+
+            <div id="taskmodal" class="task-modal" style="text-align: center; display: none;">
+                <h4>Modal</h4>
+                <button id="hideModal" class="btn btn-task" style="background-color: #1FB1C8;">CLOSE</button>
+            </div>
+            <div id="skrollr-body">
+                <div id="thecontent" style="height: 100%; display: none;">
+                    <div id="videosection" class="row splash" style="width: 100%; margin: 0;">
+                        <div class="row" style="margin: 0;">
+                            <div class=" col-xs-12 col-md-4 col-md-offset-2 about-header">
+                                <h2 style="margin-right: 120px;" class="wow slideInRight">Reward</h2>
+                                <div class="clearfix"></div>
+                                <h2 class="wow slideInLeft">yourself.</h2>
+                                <div class="clearfix"></div>
+                                <ul class="task-features">
+                                    <li class="wow slideInRight">
+                                        <img src="elements/checkbox.png"/>
+                                        <span>Get instant rewards for accomplishing tasks.</span>
+                                    </li>
+                                    <li class="wow slideInLeft">
+                                        <img src="elements/checkbox.png"/>
+                                        <span>Be involved with your favorite establishments</span>
+                                    </li>
+                                    <li class="wow slideInRight">
+                                        <img src="elements/checkbox.png"/>
+                                        <span>Join contests and win</span>
+                                    </li>
+                                    <li class="wow slideInLeft">
+                                        <img src="elements/checkbox.png"/>
+                                        <span>Download Task!</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-xs-12 text-center">
+                                <img src="elements/about-phone.png" class="img-responsive pull-left wow bounceInRight"/>
+                            </div>
+                        </div>
                     </div>
+                    <div id="aboutsection" class="row splash" style="width: 100%; margin: 0;">
+
+                        <div class="col-md-1 col-xs-0"></div>
+                        <div class="col-md-10 col-xs-12">
+                            <h2>INTERESTED IN PARTNERING WITH US?</h2>
+                            <p>
+                                You know what they say, right? The more the merrier! We would love to have you onboard. Just hit us up and we’ll get back to you ASAP!
+                            </p>
+                            <div class="row">
+                                <div class="col-md-3 col-xs-6 margin-bottom-20">
+                                    <img class="img-responsive wow zoomIn shadow" src="elements/companies/cafemed1.jpg"/>
+                                </div>
+                                <div class="col-md-3 col-xs-6 margin-bottom-20">
+                                    <img class="img-responsive wow zoomIn shadow" src="elements/companies/raven1.jpg"/>
+                                </div>
+                                <div class="col-md-3 col-xs-6 margin-bottom-20">
+                                    <img class="img-responsive wow zoomIn shadow" src="elements/companies/ihop1.jpg"/>
+                                </div>
+                                <div class="col-md-3 col-xs-6 margin-bottom-20">
+                                    <img class="img-responsive wow zoomIn shadow" src="elements/companies/calib1.jpg"/>
+                                </div>
+                                <div class="col-md-3 col-xs-6 margin-bottom-20">
+                                    <img class="img-responsive wow zoomIn shadow" src="elements/companies/mb1.jpg"/>
+                                </div>
+                                <div class="col-md-3 col-xs-6 margin-bottom-20">
+                                    <img class="img-responsive wow zoomIn shadow" src="elements/companies/bombay1.jpg"/>
+                                </div>
+                                <div class="col-md-3 col-xs-6 margin-bottom-20">
+                                    <img class="img-responsive wow zoomIn shadow" src="elements/companies/comingsoon.jpg"/>
+                                </div>
+                                <div class="col-md-3 col-xs-6 margin-bottom-20">
+                                    <img class="img-responsive wow zoomIn shadow" src="elements/companies/comingsoon.jpg"/>
+                                </div>
+                                <div class="col-md-3 col-xs-6 margin-bottom-20">
+                                    <img class="img-responsive wow zoomIn shadow" src="elements/companies/comingsoon.jpg"/>
+                                </div>
+                                <div class="col-md-3 col-xs-6 margin-bottom-20">
+                                    <img class="img-responsive wow zoomIn shadow" src="elements/companies/comingsoon.jpg"/>
+                                </div>
+                                <div class="col-md-3 col-xs-6 margin-bottom-20">
+                                    <img class="img-responsive wow zoomIn shadow" src="elements/companies/comingsoon.jpg"/>
+                                </div>
+                                <div class="col-md-3 col-xs-6 margin-bottom-20">
+                                    <img class="img-responsive wow zoomIn shadow" src="elements/companies/comingsoon.jpg"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-xs-0">
+                        </div>
+                    </div>
+                    <div id="appsection" class="row splash" style="width: 100%; margin: 0;">
+                    </div>
+                    <div id="messagesection" class="row splash" style="width: 100%; margin: 0;">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6 col-md-offset-0 col-xs-10 col-xs-offset-1" style="text-align: center;">
+                            <form action="javascript:myFunction(); return false;">
+                                <div style="margin-top: 80px;"></div>
+                                <h2>SEND US A MESSAGE</h2>
+                                <div class="message-font">Trying to reach out on us? We're here for you.</div>
+                                <div style="font-weight: bold; font-family: MonsterratBold;" class="message-font">Send a message below!</div>
+                                <select required placeholder="Subject" style="border-radius: 15px 15px 0 0; margin-top: 20px; color: #B6A9BB" id="messageSubject" class="message-box">
+                                    <option selected disabled>Subject</option>
+                                    <option>Partnership!</option>
+                                    <option>I Want to Help!</option>
+                                    <option>Comments and Suggestions</option>
+                                    <option>Problems?</option>
+                                </select>
+                                <textarea required placeholder="Message" id="messageBody" style="padding-top: 5px; padding-left: 5px; height: 200px;" class="message-box"></textarea>
+                                <input required placeholder="Email" style="border-radius: 0 0 15px 15px; padding-left: 5px;" id="messageEmail" class="message-box" type="email" />
+                                <div>
+                                    <label class="checkbox-group">
+                                        <input id="isSubscribe" type="checkbox" />
+                                        Sign me up for updates on Task!
+                                    </label>
+                                </div>
+                                <button id="btnSendMessage" style="width: 200px; height: 45px;" class="btn btn-task">Send</button>
+                            </form>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <footer>
+                        <div class="row" style="margin: 0;">
+                            <div style="text-align: center; margin-bottom: 5px;" class="col-md-3 col-xs-12">
+                                © 2015 Artise
+                            </div>
+                            <a href="#" target="_blank">
+                                <div style="text-align: center; margin-bottom: 5px; color: #FFF;" class="col-md-3 col-xs-12">
+                                    Terms of Service
+                                </div>
+                            </a>
+                            <a href="#" target="_blank">
+                                <div style="text-align: center; margin-bottom: 5px; color: #FFF;" class="col-md-3 col-xs-12">
+                                    Privacy Policy
+                                </div>
+                            </a>
+                            <a href="#" target="_blank">
+                                <div style="text-align: center; margin-bottom: 5px; color: #FFF;" class="col-md-3 col-xs-12">
+                                    Business Registration
+                                </div>
+                            </a>
+                        </div>
+                    </footer>
                 </div>
+                <img src="elements/img_about_bg.jpg" style="display: none;"/>
+                <img src="elements/img_support_bg.jpg" style="display: none;"/>
+                <script src="scripts/jquery.js"></script>
+                <script src="scripts/jparralax.js"></script>
+                <script src="scripts/scrollTo.js"></script>
+                <script src="scripts/jimgpreload.js"></script>
+                <script src="scripts/skrollr.js"></script>
+                <script src="scripts/screenfull.js"></script>
+                <script src="scripts/jquery.toaster.js"></script>
+                <script src="scripts/jquery.fitvids.js"></script>
+                <script src="scripts/froogaloop.js"></script>
+                <script src="scripts/wow.min.js"></script>
+                <script type="text/javascript" src="elements/selectmenu/ui/jquery.ui.core.js"></script>
+                <script type="text/javascript" src="elements/selectmenu/ui/jquery.ui.widget.js"></script>
+                <script type="text/javascript" src="elements/selectmenu/ui/jquery.ui.position.js"></script>
+                <script type="text/javascript" src="elements/selectmenu/ui/jquery.ui.selectmenu.js"></script>
+                <script>
+                    var appSectionTop = 0;
+                    var appSectionHeight = 0;
+                    var appOffsetLeft = 0;
+                    var isAppAnimation = false;
+                    var windowHeight = 0;
+                    var s = null;
+                    window.scrollTop = 0;
+
+                    $(window).load(function() {
+                        initNavigation();
+                        $.preloadCssImages();
+                        init();
+                        initEvents();
+                        $(".window-height").height($(window).height());
+                    });
+
+                    $(window).scroll(function() {
+                        window.scrollTop = $(this).scrollTop();
+                        scrollNavigation();
+                    });
+
+                    function initNavigation() {
+                        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || $(window).width() < 768) {
+                            $(".fixed-header-right").hide();
+                            $("#navigation").hide();
+                            $("#navbar-mobile").show();
+                        } else {
+                            $(".fixed-header-right").show();
+                            $("#navigation").show();
+                            $("#navbar-mobile").hide();
+                        }
+                    }
+
+                    function init() {
+                        windowHeight = $(window).height();
+
+                        $('#task-body').show();
+                        $('#thecontent').show();
+                        $('#taskloader').hide();
+
+                        $('#supportsection').parallax("50%", 0.5);
+                        $('#messagesection').parallax("50%", 0.1);
+                        scrollNavigation();
+                        //$('.parallax-box').css({ 'left': $('#theapp').offset().left });
+                        appOffsetLeft = $("#theapp").offset().left;
+                        appSectionTop = $("#appsection").offset().top;
+                        appSectionHeight = $("#appsection").height();
+                        appSectionTopEnd = appSectionHeight + appSectionTop;
+                        s = skrollr.init();
+                        new WOW().init();
+                        $.toaster({settings: {timeout: 4000}});
+                    }
+
+                    function initEvents() {
+                        initMessage();
+                        initScrollTo();
+
+                    }
+
+                    function initMessage() {
+                        $("#btnSendMessage").click(function() {
+                            if ($('#messageSubject').val().length && $('#messageBody').val().length && $('#messageEmail').val().length) {
+                                var isSubscribe = $('#isSubscribe').is(':checked');
+                            }
+                            $.post('/Service/AddMessage', {
+                                subject: $('#messageSubject').val(),
+                                message: $('#messageBody').val(),
+                                email: $('#messageEmail').val(),
+                                isSubscribed: isSubscribe
+                            });
+
+                            $.toaster({title: 'Thank you!', priority: 'success', message: 'Your message has been sent! We will get back to you shortly. (For subscribers please double check your spam folder.)'});
+                        });
+                    }
+
+                    function initScrollTo() {
+                        $('#navmobile1').click(function() {
+                            s.animateTo(s.relativeToAbsolute($('#videosection')[0], 'top', 'top'));
+                        });
+
+                        $('#navmobile2').click(function() {
+                            s.animateTo(s.relativeToAbsolute($('#aboutsection')[0], 'top', 'top'));
+                        });
+
+                        $('#navmobile3').click(function() {
+                            s.animateTo(s.relativeToAbsolute($('#appsection')[0], 'top', 'top'));
+                        });
+
+                        $('#navmobile4').click(function() {
+                            s.animateTo(s.relativeToAbsolute($('#supportsection')[0], 'top', 'top'));
+                        });
+
+                        $('#navmobile5').click(function() {
+                            s.animateTo(s.relativeToAbsolute($('#messagesection')[0], 'top', 'top'));
+                        });
+
+                        $('#msupportfixed').click(function() {
+                            s.animateTo(s.relativeToAbsolute($('#supportsection')[0], 'top', 'top'));
+                        });
+
+                        $('#mlogo').click(function() {
+                            s.animateTo(s.relativeToAbsolute($('#videosection')[0], 'top', 'top'));
+                        });
+
+
+                        $('#nav1').click(function() {
+                            $('#videosection').ScrollTo();
+                        });
+
+                        $('#nav2').click(function() {
+                            $('#aboutsection').ScrollTo();
+                        });
+
+                        $('#nav3').click(function() {
+                            $('#appsection').ScrollTo();
+                        });
+
+                        $('#nav4').click(function() {
+                            $('#supportsection').ScrollTo();
+                        });
+
+                        $('#nav5').click(function() {
+                            $('#messagesection').ScrollTo();
+                        });
+
+                        $('.support-anchor').click(function() {
+                            $('#supportsection').ScrollTo();
+                        });
+                    }
+
+                    function scrollNavigation() {
+                        if (isInsideSectionScope('#videosection')) {
+                            toggleNavigation(1);
+                        }
+                        else if (isInsideSectionScope("#aboutsection")) {
+                            toggleNavigation(2);
+                        }
+                        else if (isInsideSectionScope("#appsection")) {
+                            toggleNavigation(3);
+                        }
+                        else if (isInsideSectionScope("#messagesection")) {
+                            toggleNavigation(5);
+                        }
+                    }
+
+                    function toggleNavigation(sectionNumber) {
+                        $("#navigation ul li").each(function() {
+                            $(this).removeClass('active');
+                        });
+                        $('#nav' + sectionNumber).addClass('active');
+                    }
+
+                    function isInsideSectionScope(sectionName) {
+                        var scrollTop = window.scrollTop + 200;
+                        var sectionTop = $(sectionName).offset().top;
+                        return scrollTop > sectionTop && scrollTop < (sectionTop + $(sectionName).height());
+                    }
+
+                </script>
             </div>
         </div>
-    </section>
-
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/1.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    The Cafe Mediterranian
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/2.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    iHOP
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/3.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Market Basket
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/4.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    New Bombay
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/5.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Qubiertos
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Raven
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Visit the Google Play Store right now!</h2>
-                <a href="https://play.google.com/store/apps/details?id=artisedesolution.task" class="btn btn-default btn-xl wow tada">Download</a>
-            </div>
-        </div>
-    </aside>
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Do you wanna know more about this app? Contact us through the details below and we'll get back to you as soon as we can!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>+639065496422/+639175768847</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">artise.de.solution.corporation@gmail.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
-
-</body>
-
+    </body>
 </html>
